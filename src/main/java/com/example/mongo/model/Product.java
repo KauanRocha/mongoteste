@@ -1,15 +1,17 @@
 package com.example.mongo.model;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "products")
 public class Product {
 	
-	String id;
+	@Id
+	private String id;
 	
-	String name;
+	private String name;
 	
-	String category;
+	private String category;
 
 	public String getId() {
 		return id;

@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: mongodb
+
+server:
+  port: 8080
+
+mongo-express:
+  url: http://mongo-express:8081
